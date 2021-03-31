@@ -15,7 +15,6 @@ if (isset($_POST['upload'])) {
 		$target_dir = "./";
 
 	$target_dir .= $location . "/";
-	$target_dir .= $location . "/";
 
 	if (!file_exists($target_dir)) {
 		mkdir($target_dir, 0777, true);
@@ -23,7 +22,7 @@ if (isset($_POST['upload'])) {
 
 	$target_file = $target_dir . basename($_FILES['file']['name']);
 	$_FILES['file']['name'];
-	
+
 	if (file_exists($target_file))
 		unlink($target_file);
 
