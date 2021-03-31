@@ -35,7 +35,7 @@ if (empty($id)) {
 		</select>
 		Select File : <input type="file" name="files[]" id='file' multiple="multiple">
 		<br><br>
-		Location : <input type="text" name="location" id='location'>
+		Location : <input type="text" name="location" id='location' value="../">
 		<br><br>
 		<input type="submit" name="upload" value="Upload">
 	</form>
